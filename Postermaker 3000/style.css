@@ -1,0 +1,402 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background: rgb(221, 212, 206);
+  font-family: 'Courier New', Courier, monospace;
+  overflow: hidden;
+}
+
+
+
+.poster{
+	
+  border: 1px solid;
+    box-shadow: 1px 1px 0 0 #000;
+    border-top: 1px solid #DFDFDF;
+    border-left: 1px solid #DFDFDF;
+   display: block;
+	position: fixed;
+    background-color: #BFBFBF;
+    padding: 4px;
+	left:  0.5vw;
+	top: 0.5vw;
+	font-size: 1.5vw;
+	font-weight: 600;
+	font-family: 'Courier New', Courier, monospace;
+}
+.foot{
+  border: 1px solid;
+    box-shadow: 1px 1px 0 0 #000;
+    border-top: 1px solid #DFDFDF;
+    border-left: 1px solid #DFDFDF;
+   display: block;
+	position: fixed;
+    background-color: #BFBFBF;
+    padding: 4px;
+	left:  0vw;
+  right: 0;
+  top: 98%;
+	bottom: 0vw;
+  text-align: right;
+	font-size: 0.7vw;
+	font-weight: 600;
+	font-family: 'Courier New', Courier, monospace;
+}
+
+
+
+
+.time {
+    font-size: 0.3vw;
+    border-top: 1px solid #08080E;
+    border-left: 1px solid #08080E;
+    border-right: 1px solid #FCFCFC;
+    border-bottom: 1px solid #FCFCFC;
+    display: block;
+	position: fixed;
+   right: 15vw;
+   font-weight: 900;
+   text-align: center;
+}
+.text-center {
+    text-align: center !important;
+}
+
+.littleT{
+	
+  border: 1px solid;
+    box-shadow: 1px 1px 0 0 #000;
+    border-top: 1px solid #DFDFDF;
+    border-left: 1px solid #DFDFDF;
+   display: block;
+	position: fixed;
+    background-color: #BFBFBF;
+    padding: 14px;
+	right: 0.5vw;
+  margin-left:80vw;
+	top: 20%;
+	font-size: 1vw;
+	font-weight:normal;
+	font-family: 'Courier New', Courier, monospace;
+}
+
+
+
+canvas {
+  display: absolute;
+  
+}
+
+.gui{
+    
+    position: fixed;
+    width:15%;
+    background:rgba(0, 0, 0, 0);
+    left: 0%;
+    border-radius:15px;
+    user-select: none;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+  }
+		 .guicontent{
+    position: fixed;
+  padding: 10px;
+  left: 0%;
+top: 7vh;
+font-size:large;
+font-weight: 550;
+display: grid;
+    grid-template-columns: 1fr 1fr;
+
+  }
+		
+	
+		
+		.guiBack{
+			border: 1px solid;
+    box-shadow: 1px 1px 0 0 #000;
+    border-top: 1px solid #DFDFDF;
+    border-left: 1px solid #DFDFDF;
+    display: block;
+    background-color: #BFBFBF;
+    padding: 4px;
+		}
+		
+		.guiText{
+			border: 1px solid;
+    box-shadow: 1px 1px 0 0 #000;
+    border-top: 1px solid #DFDFDF;
+    border-left: 1px solid #DFDFDF;
+    display: block;
+    background-color: #BFBFBF;
+    padding: 4px;
+		}
+		.guiAnim{
+			border: 1px solid;
+    box-shadow: 1px 1px 0 0 #000;
+    border-top: 1px solid #DFDFDF;
+    border-left: 1px solid #DFDFDF;
+    display: block;
+    background-color: #BFBFBF;
+    padding: 4px;
+		}
+
+		
+		.guiSave{
+			border: 1px solid;
+    box-shadow: 1px 1px 0 0 #000;
+    border-top: 1px solid #DFDFDF;
+    border-left: 1px solid #DFDFDF;
+    display: block;
+    background-color: #BFBFBF;
+    padding: 4px;
+			
+		}
+
+    .guiGrid{
+			border: 1px solid;
+    box-shadow: 1px 1px 0 0 #000;
+    border-top: 1px solid #DFDFDF;
+    border-left: 1px solid #DFDFDF;
+    display: block;
+    background-color: #BFBFBF;
+    padding: 4px;
+			
+		}
+    .guiImg{
+			border: 1px solid;
+    box-shadow: 1px 1px 0 0 #000;
+    border-top: 1px solid #DFDFDF;
+    border-left: 1px solid #DFDFDF;
+    display: block;
+    background-color: #BFBFBF;
+    padding: 4px;
+			
+		}
+	
+		.guitoggle{
+			float:right;
+		}
+	
+		.label{
+			color:#000000;
+			font-family: 'Courier New', Courier, monospace;
+			text-align:left;
+			font-size: small;
+			
+		}
+		 .guibar{
+			
+			font-family: 'Courier New', Courier, monospace;
+			text-align:left;
+			font-size: x-large;
+			color: #FFF;
+			    border: 1px solid;
+    box-shadow: 1px 1px 0 0 #000;
+    border-top: 1px solid #DFDFDF;
+    border-left: 1px solid #DFDFDF;
+    text-align: left;
+    background: #000084;
+    outline: 0;
+    padding-left: 4px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-right: 4px;
+    height: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+	position: fixed;
+	left: 0.5vw;
+	top: 2%;
+		 }
+		.hidden{
+			display:none;
+		}
+		
+		canvas {
+  position: absolute;
+    left: 50%;
+    top: 0%;
+    transform: translate(-50%, -0%);
+    display: flex;
+    margin: auto;
+
+}
+
+
+		
+input[type="checkbox" i] {
+       cursor: pointer;
+    position: relative;
+    border: 1px solid;
+    border-top: 1px solid #000;
+    border-left: 1px solid #000;
+    border-right: 1px solid #DFDFDF;
+    border-bottom: 1px solid #DFDFDF;
+    background: #FFF;
+    scale: 120%;
+}
+
+button {
+    border: 1px solid;
+    border-top-color: #DFDFDF;
+    border-left-color: #DFDFDF;
+    border-bottom-color: #808080;
+    border-right-color: #808080;
+    box-shadow: 1px 1px 0 0 #000;
+    color: #000;
+    background-color: #BFBFBF;
+    text-align: center;
+    display: flex;
+	    width: 85px;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+}
+
+.maker{
+  display: block;
+  position: fixed;
+  width: 25%;
+  right: 0%;
+  top: 4vh;
+}
+
+.maker2{
+  display: block;
+  position: fixed;
+  width: 25%;
+  right: -2.3%;
+  top: 58vh;
+}
+
+
+@media (max-width: 2560px) {
+
+  .littleT{
+	
+
+  display: block;
+	position: fixed;
+  padding: 14px;
+	right: 0.5vw;
+  margin-left:80vw;
+	top: 20vh;
+	font-size: 1vw;
+	
+}
+
+.label{
+			color:#000000;
+			font-family: 'Courier New', Courier, monospace;
+			text-align:left;
+			font-size: small;
+			margin-bottom: 1%;
+		}
+
+  .gui{
+    
+    position: fixed;
+    width:15%;
+    background:rgba(0, 0, 0, 0);
+    left: 0%;
+    border-radius:15px;
+    user-select: none;
+    scale: 140%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+  }
+  .guicontent{
+    position: fixed;
+  padding: 10px;
+  left: 3%;
+top: 0vh;
+font-size:large;
+font-weight: 550;
+display: grid;
+    grid-template-columns: 1fr 1fr;
+
+  }
+
+  .guiAnim{
+    border: 1px solid;
+  box-shadow: 1px 1px 0 0 #000;
+  border-top: 1px solid #DFDFDF;
+  border-left: 1px solid #DFDFDF;
+  display: block;
+  background-color: #BFBFBF;
+  padding: 4px;
+  }
+
+  .guiDraw{
+    border: 1px solid;
+  box-shadow: 1px 1px 0 0 #000;
+  border-top: 1px solid #DFDFDF;
+  border-left: 1px solid #DFDFDF;
+  display: block;
+  background-color: #BFBFBF;
+  padding: 4px;
+  }
+
+  .guiImg{
+			border: 1px solid;
+    box-shadow: 1px 1px 0 0 #000;
+    border-top: 1px solid #DFDFDF;
+    border-left: 1px solid #DFDFDF;
+    display: ruby;
+    background-color: #BFBFBF;
+    padding: 4px;
+			
+		}
+
+  .guiSave{
+    border: 1px solid;
+  box-shadow: 1px 1px 0 0 #000;
+  border-top: 1px solid #DFDFDF;
+  border-left: 1px solid #DFDFDF;
+  display: block;
+  background-color: #BFBFBF;
+  padding: 4px;
+    
+  }
+
+  .guiGrid{
+    border: 1px solid;
+  box-shadow: 1px 1px 0 0 #000;
+  border-top: 1px solid #DFDFDF;
+  border-left: 1px solid #DFDFDF;
+  display: block;
+  background-color: #BFBFBF;
+  padding: 4px;
+    
+  }
+
+  .guibar{
+			opacity: 0%;
+   }
+  .hidden{
+    display:none;
+  }
+
+  .maker{
+  display: block;
+  position: fixed;
+  width: 25%;
+  right: 0%;
+  top: 4vh;
+}
+
+.maker2{
+  display: block;
+  position: fixed;
+  width: 25%;
+  right: -2.3%;
+  top: 58vh;
+}
+}
