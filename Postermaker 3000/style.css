@@ -278,14 +278,24 @@ button {
 
 @media (max-width: 2560px) {
 
+canvas {
+  position: absolute;
+    left: 50%;
+    top: 0%;
+    transform: translate(-50%, -0%);
+    display: flex;
+    width: 150%;
+    margin: auto;
+}
+
   .littleT{
 	
 
   display: block;
 	position: fixed;
-  padding: 14px;
+  padding: 24px;
 	right: 0.5vw;
-  margin-left:80vw;
+  margin-left:85vw;
 	top: 20vh;
 	font-size: 1vw;
 	
@@ -304,10 +314,10 @@ button {
     position: fixed;
     width:15%;
     background:rgba(0, 0, 0, 0);
-    left: 0%;
+    left: -9%;
     border-radius:15px;
     user-select: none;
-    scale: 140%;
+    scale: 70%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     
@@ -315,8 +325,8 @@ button {
   .guicontent{
     position: fixed;
   padding: 10px;
-  left: 3%;
-top: 0vh;
+  left: -50%;
+top: 23vh;
 font-size:large;
 font-weight: 550;
 display: grid;
@@ -387,16 +397,16 @@ display: grid;
   .maker{
   display: block;
   position: fixed;
-  width: 25%;
+  width: 15%;
   right: 0%;
-  top: 4vh;
+  top: 10vh;
 }
 
 .maker2{
   display: block;
   position: fixed;
-  width: 25%;
-  right: -2.3%;
-  top: 58vh;
+  width: 15%;
+  right: -0.3%;
+  top: 88vh;
 }
 }
